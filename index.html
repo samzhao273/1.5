@@ -16,7 +16,7 @@
 <body>
     <main>
         <h1>Hai My love!</h1>
-        <img src="./images/test.png" class="landing-page-image"></img>
+        <img src="./images/test.jpeg" class="landing-page-image"></img>
         <h2>
             <textarea id="typewriter" readonly></textarea>
         </h2>
@@ -25,26 +25,32 @@
                 var textArea = document.getElementById('typewriter');
                 var text = "I see that you have found this little thing that I've been working on hehe. I wanted to make something that was more accessible than the little book and whenever you are sad, you can just click on a link and see all the precious memories we have. So if you're ready click on the button below and take a dive into our memories together! ♡";
                 var index = 0;
-
                 function typeWriter() {
                     if (index < text.length) {
-                        console.log(text.charAt(index));
                         if (text.charAt(index) == ".") {
-                            setTimeout(() => {}, 10);
+                            setTimeout(() => { }, 100);
                         }
                         textArea.value += text.charAt(index);
                         index++;
-                        setTimeout(typeWriter, 10); // Adjust typing speed
+                        setTimeout(typeWriter, 40); // Adjust typing speed
                     }
+                    console.log(index);
                 }
                 typeWriter(); // Start the typewriter effect
             });
+            setTimeout(function () {
+                document.getElementById('hiddenElement').style.display = 'inline';
+            }, 15000);
         </script>
-        <button class="icon-button">
+        <button class="icon-button" id="hiddenElement">
             <img src="./images/bunny.jpg" alt="Icon" class="button-icon">
         </button>
+        <!-- <script>
+            setTimeout(function () {
+                document.getElementById('hiddenElement').style.display = 'inline';
+            }, 13485);
+        </script> -->
     </main>
-    <script src="index.js"></script>
 </body>
 
 </html>

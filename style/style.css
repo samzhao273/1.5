@@ -32,6 +32,7 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    display: none;
 }
 
 .button-icon {
@@ -48,13 +49,23 @@ button {
     font-family: 'Fredoka One', sans-serif;
     font-size: medium;
     text-align: center;
-    color: black;
+    color: #F5F5DC;
     resize: none;
-    overflow: hidden; /* Hide scrollbar */
+    overflow: hidden;
+    /* Hide scrollbar */
     border-color: #FFC0CB;
-  }
-  
-  .landing-page-image {
+}
+
+.landing-page-image {
     width: 250px;
     height: 140.625;
-  }
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    /* or 'inline', 'inline-block', etc., depending on your needs */
+}
