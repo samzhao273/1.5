@@ -16,6 +16,7 @@
 <body>
     <main>
         <h1>Hai My love!</h1>
+        <img src="test.png" class="landing-page-image"></img>
         <h2>
             <textarea id="typewriter" readonly></textarea>
         </h2>
@@ -29,11 +30,11 @@
                     if (index < text.length) {
                         console.log(text.charAt(index));
                         if (text.charAt(index) == ".") {
-                            setTimeout(() => {}, 200);
+                            setTimeout(() => {}, 10);
                         }
                         textArea.value += text.charAt(index);
                         index++;
-                        setTimeout(typeWriter, 50); // Adjust typing speed
+                        setTimeout(typeWriter, 10); // Adjust typing speed
                     }
                 }
                 typeWriter(); // Start the typewriter effect

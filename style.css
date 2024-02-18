@@ -1,17 +1,14 @@
 body {
     height: 100%;
-    margin: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* Center text */
     background: #FFC0CB;
-    /* Light pink gradient */
     color: #F5F5DC;
-    /* Light beige font color */
     font-family: 'Fredoka One', sans-serif;
-    margin: 0;
+
     padding: 20px;
     box-sizing: border-box;
 }
@@ -20,11 +17,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-textarea {
-    margin: 20px 0;
-    /* Adds space above and below the textarea */
 }
 
 button {
@@ -51,7 +43,7 @@ button {
 
 #typewriter {
     width: 350px;
-    height: 155px;
+    height: 180px;
     background-color: #FFC0CB;
     font-family: 'Fredoka One', sans-serif;
     font-size: medium;
@@ -62,3 +54,7 @@ button {
     border-color: #FFC0CB;
   }
   
+  .landing-page-image {
+    width: 250px;
+    height: 140.625;
+  }
