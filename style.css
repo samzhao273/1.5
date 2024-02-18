@@ -1,0 +1,63 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Center text */
+    background: #FFC0CB;
+    /* Light pink gradient */
+    color: #F5F5DC;
+    /* Light beige font color */
+    font-family: 'Fredoka One', sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    margin: 20px 0;
+    /* Adds space above and below the textarea */
+}
+
+button {
+    cursor: pointer;
+    /* Changes cursor to pointer when hovering over the button */
+}
+
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #F5F5DC;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-icon {
+    width: 50px;
+    /* Adjust based on your icon's size */
+    height: 50px;
+    /* Adjust based on your icon's size */
+}
+
+#typewriter {
+    width: 400px;
+    height: 115px;
+    padding: 10px;
+    background-color: #FFC0CB;
+    font-family: 'Fredoka One', sans-serif;
+    color: black;
+    resize: none;
+    overflow: hidden; /* Hide scrollbar */
+    border-color: #FFC0CB;
+  }
+  

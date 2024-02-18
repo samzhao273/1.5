@@ -6,12 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cathy + Sam 1.5 Years </title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" 
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
 </head>
 
 <body>
     <main>
-        <h1>Welcome to My Website</h1>
+        <h1>Hai my love!</h1>
+        <h2>
+            <textarea id="typewriter" readonly></textarea>
+        </h2>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var textArea = document.getElementById('typewriter');
+                var text = "I see that you have found this little thing that I've been working on hehe. \nI wanted to make something that was more accessible than the little book and whenever you are sad, you can just click on a link and see all the precious memories we have. So if you're ready click on the buttonbelow and take a dive into our memories together! ♡";
+                var index = 0;
+
+                function typeWriter() {
+                    if (index < text.length) {
+                        textArea.value += text.charAt(index);
+                        index++;
+                        setTimeout(typeWriter, 1); // Adjust typing speed
+                    }
+                }
+                typeWriter(); // Start the typewriter effect
+            });
+        </script>
+        <button class="icon-button">
+            <img src="bunny.jpg" alt="Icon" class="button-icon">
+        </button>
     </main>
     <script src="index.js"></script>
 </body>
