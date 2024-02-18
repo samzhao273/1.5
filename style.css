@@ -50,11 +50,12 @@ button {
 }
 
 #typewriter {
-    width: 400px;
-    height: 115px;
-    padding: 10px;
+    width: 350px;
+    height: 155px;
     background-color: #FFC0CB;
     font-family: 'Fredoka One', sans-serif;
+    font-size: medium;
+    text-align: center;
     color: black;
     resize: none;
     overflow: hidden; /* Hide scrollbar */

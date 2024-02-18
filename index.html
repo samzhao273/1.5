@@ -15,21 +15,25 @@
 
 <body>
     <main>
-        <h1>Hai my love!</h1>
+        <h1>Hai My love!</h1>
         <h2>
             <textarea id="typewriter" readonly></textarea>
         </h2>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 var textArea = document.getElementById('typewriter');
-                var text = "I see that you have found this little thing that I've been working on hehe. \nI wanted to make something that was more accessible than the little book and whenever you are sad, you can just click on a link and see all the precious memories we have. So if you're ready click on the buttonbelow and take a dive into our memories together! ♡";
+                var text = "I see that you have found this little thing that I've been working on hehe. I wanted to make something that was more accessible than the little book and whenever you are sad, you can just click on a link and see all the precious memories we have. So if you're ready click on the button below and take a dive into our memories together! ♡";
                 var index = 0;
 
                 function typeWriter() {
                     if (index < text.length) {
+                        console.log(text.charAt(index));
+                        if (text.charAt(index) == ".") {
+                            setTimeout(() => {}, 200);
+                        }
                         textArea.value += text.charAt(index);
                         index++;
-                        setTimeout(typeWriter, 1); // Adjust typing speed
+                        setTimeout(typeWriter, 50); // Adjust typing speed
                     }
                 }
                 typeWriter(); // Start the typewriter effect
