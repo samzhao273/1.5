@@ -1,8 +1,10 @@
 /* style.css */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevents horizontal scroll */
+    overflow-x: hidden;
+    /* Prevents horizontal scroll */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +25,8 @@ body, html {
 }
 
 .photo-card {
-    margin-bottom: 40px; /* Space between cards */
+    margin-bottom: 40px;
+    /* Space between cards */
 }
 
 .title-date {
@@ -45,11 +48,16 @@ body, html {
 .caption {
     width: 350px;
     text-align: left;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #F5F5DC;
     padding: 5px;
 }
 
 .gallery-image {
     width: 350px;
     height: 232px;
+}
+
+h1 {
+    border-bottom: 1px solid #F5F5DC;
+    padding-bottom: 10px;
 }
