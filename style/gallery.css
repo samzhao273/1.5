@@ -1,5 +1,4 @@
 /* style.css */
-
 body, html {
     margin: 0;
     padding: 0;
@@ -11,7 +10,6 @@ body, html {
     background: #FFC0CB;
     color: #F5F5DC;
     font-family: 'Fredoka One', sans-serif;
-
     padding: 20px;
     box-sizing: border-box;
 }
@@ -24,7 +22,7 @@ body, html {
 }
 
 .photo-card {
-    margin-bottom: 20px; /* Space between cards */
+    margin-bottom: 40px; /* Space between cards */
 }
 
 .title-date {
@@ -45,7 +43,12 @@ body, html {
 
 .caption {
     width: 250px;
-    text-align: center;
+    text-align: left;
     border-top: 1px solid #ddd;
     padding: 5px;
+}
+
+.gallery-image {
+    width: 250px;
+    height: 140.625;
 }
