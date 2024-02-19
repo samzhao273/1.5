@@ -27,24 +27,23 @@ button {
 .icon-button {
     display: inline-flex;
     align-items: center;
-    background-color: #F5F5DC;
+    background-color: #FFC0CB;
     border: none;
-    padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     display: none;
 }
 
 .button-icon {
-    width: 50px;
+    width: 100px;
     /* Adjust based on your icon's size */
-    height: 50px;
+    height: 100px;
     /* Adjust based on your icon's size */
 }
 
 #typewriter {
     width: 350px;
-    height: 180px;
+    height: 200px;
     background-color: #FFC0CB;
     font-family: 'Fredoka One', sans-serif;
     font-size: medium;
