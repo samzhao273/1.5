@@ -4,48 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cathy + Sam 1.5 Years </title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-
+    <link rel="stylesheet" href="style/password.css">
 </head>
 
 <body>
-    <main>
-        <h1>Hai My Love!</h1>
-        <img src="./images/index.jpeg" class="landing-page-image"></img>
-        <h2>
-            <textarea id="typewriter" readonly></textarea>
-        </h2>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                var textArea = document.getElementById('typewriter');
-                var text = "Happy anniversary Bubbas! I see that you have found this little thing that I've been working on hehe. I wanted to make something that was more accessible than the little book and whenever you are sad or you just want to look at our photos, you can just go to our link and see all the precious memories we have. So if you're ready click on the cat below and take a dive into our memories together! ♡";
-                var index = 0;
-                function typeWriter() {
-                    if (index < text.length) {
-                        if (text.charAt(index) == ".") {
-                            setTimeout(() => { }, 100);
-                        }
-                        textArea.value += text.charAt(index);
-                        index++;
-                        setTimeout(typeWriter, 40); // Adjust typing speed
-                    }
-                    console.log(index);
-                }
-                typeWriter(); // Start the typewriter effect
-            });
-            setTimeout(function () {
-                document.getElementById('hiddenElement').style.display = 'inline';
-            }, 1);
-        </script>
-        <button class="icon-button" id="hiddenElement" onclick="window.location.href='gallery/gallery.html';">
-            <img src="./images/happy-cat.gif" alt="Icon" class="button-icon">
-        </button>
-    </main>
+    <h1>Please Enter What You Call Me:</h1>
+
+        <input type="password" id="passwordInput" placeholder="Enter Password">
+        <button onclick="checkPassword()">Enter</button>
+    <script>
+        function checkPassword() {
+            var passwordInput = document.getElementById('passwordInput').value;
+            var correctPassword = 'SamZhao'; // Set your password here
+
+            if (passwordInput === correctPassword) {
+                // Password is correct, navigate to another page
+                window.location.href = 'landing/landing.html'; // Specify the target page URL here
+            } else {
+                // Password is incorrect, show an alert or update UI
+                alert('Incorrect password, please try again.');
+            }
+        }
+    </script>
 </body>
 
 </html>
