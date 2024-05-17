@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #F5F5DC;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Fredoka One', sans-serif;
+    box-sizing: border-box;
+    background-color: #F5F5DC;
+}
+
+.coupon {
+    background-color: #FFC0CB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 300px;
+}
+
+.coupon img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.coupon h2 {
+    color: #F5F5DC;
+    margin-top: 10px;
+}
+
+.coupon p {
+    color: #F5F5DC;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.coupon .code {
+    font-size: 24px;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.coupon .expiration {
+    color: #e80c0c;
+    font-size: 14px;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    background-color: #FFC0CB;
+    border: none;
+    border-radius: 5px;
+    color: #F5F5DC;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-family: 'Fredoka One', sans-serif;
+}
+
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #FFC0CB;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#typewriter {
+    width: 350px;
+    height: 200px;
+    background-color: #FFC0CB;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: medium;
+    text-align: center;
+    color: #F5F5DC;
+    resize: none;
+    overflow: hidden;
+    border-color: #FFC0CB;
+}
+
+.landing-page-image {
+    width: 250px;
+    height: 140.625px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

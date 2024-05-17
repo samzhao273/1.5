@@ -11,7 +11,6 @@
 
 <body>
     <h1>Please Enter What You Call Me:</h1>
-
         <input type="password" id="passwordInput" placeholder="Enter Password">
         <button onclick="checkPassword()">Enter</button>
     <script>
@@ -21,7 +20,7 @@
 
             if (passwordInput === correctPassword) {
                 // Password is correct, navigate to another page
-                window.location.href = 'landing/landing.html'; // Specify the target page URL here
+                window.location.href = 'pre-landing/pre-landing.html'; // Specify the target page URL here
             } else {
                 // Password is incorrect, show an alert or update UI
                 alert('Incorrect password, please try again.');
